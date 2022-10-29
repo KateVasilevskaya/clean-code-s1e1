@@ -21,9 +21,11 @@
 }
 
 @media (max-width: 768px) {
+
   .banner {
     text-align: center;
   }
+  
 }
 
 .container {
@@ -66,9 +68,11 @@ input,
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .btn:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .title {
   color: #333;
@@ -112,7 +116,6 @@ input,
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
