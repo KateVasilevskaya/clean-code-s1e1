@@ -10,59 +10,63 @@
   </head>
   <body class="wrapper">
     <section class="banner">
-      <img class="img" src="./eisenhower-matrix.jpg"  alt="Matrix"/>
+      <img class="banner-img" src="./eisenhower-matrix.jpg" alt="Matrix" />
       <a
-        class="more-info"
+        class="banner-info"
         href="https://goal-life.com/page/method/matrix-eisenhower"
         >Want more details?</a
       >
     </section>
-    <div class="container">
-      <section id="add-item" class="block">
-        <label class="title new-task-title" for="new-task">Add Item</label>
-        <div class="task-row">
-          <input id="new-task" class="task text new-task" type="text" />
-          <button class="btn">Add</button>
+    <article class="todo-list">
+      <section class="add-task" id="add-task">
+        <label class="title add-task-label" for="new-task">Add Item</label>
+        <div class="add-task-row">
+          <input class="add-task-input text task" id="new-task" type="text" />
+          <button class="add-task-button btn">Add</button>
         </div>
       </section>
       <section>
-        <h3 class="title">Todo</h3>
-        <ul id="incomplete-tasks" class="list">
-          <li class="item">
-            <input type="checkbox" class="check" />
-            <label class="task task-name">Pay Bills</label>
-            <input type="text" class="task text" />
-            <button class="btn edit">Edit</button>
-            <button class="btn delete">
-              <img src="./remove.svg" class="icon" alt=""/>
+        <h3 class="todo-list-title title">Todo</h3>
+        <ul class="list" id="incomplete-tasks">
+          <li class="list-item">
+            <input class="list-checkbox" type="checkbox" />
+            <label class="list-label task">Pay Bills</label>
+            <input class="task text list-text" type="text" />
+            <button class="list-button btn list-button-edit">Edit</button>
+            <button class="list-button btn list-button-delete">
+              <img src="./remove.svg" class="list-icon" alt="" />
             </button>
           </li>
-          <li class="item edit-mode">
-            <input type="checkbox" class="check" />
-            <label class="task task-name">Go Shopping</label>
-            <input type="text" value="go shopping" class="text task" />
-            <button class="btn edit">Save</button>
-            <button class="btn delete">
-              <img src="./remove.svg" class="icon"  alt="" />
+          <li class="list-item edit-mode">
+            <input type="checkbox" class="list-checkbox" />
+            <label class="list-label task">Go Shopping</label>
+            <input
+              type="text"
+              value="go shopping"
+              class="list-text text task"
+            />
+            <button class="list-button btn list-button-edit">Save</button>
+            <button class="list-button btn list-button-delete">
+              <img src="./remove.svg" class="list-icon" alt="" />
             </button>
           </li>
         </ul>
       </section>
       <section>
-        <h3 class="title">Completed</h3>
+        <h3 class="todo-list-title title">Completed</h3>
         <ul id="completed-tasks" class="list completed-tasks">
-          <li class="item">
-            <input type="checkbox" checked class="check" />
-            <label class="task task-name">See the Doctor</label>
-            <input type="text" class="task text" />
-            <button class="btn edit">Edit</button>
-            <button class="btn delete">
-              <img src="./remove.svg" class="icon"  alt=""/>
+          <li class="list-item">
+            <input class="list-checkbox" type="checkbox" checked />
+            <label class="list-label task">See the Doctor</label>
+            <input type="text" class="list-text task text" />
+            <button class="list-button btn list-button-edit">Edit</button>
+            <button class="list-button btn list-button-delete">
+              <img src="./remove.svg" class="list-icon" alt="" />
             </button>
           </li>
         </ul>
       </section>
-    </div>
+    </article>
     <script src="app.js"></script>
   </body>
 </html>
