@@ -168,4 +168,6 @@ for (var i = 0; i < completedTasksHolder.children.length; i++) {
 
 // Issues with usability don't get seen until they are in front of a human tester.
 
+//prevent creation of empty tasks.
+
 //Change edit to save when you are in edit mode.
